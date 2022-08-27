@@ -10,7 +10,7 @@ app.get('/api/xyz',JwtGuard,(req, res) => {
 });
   
 app.get('/api/generateToken',(req,res) => {
-  res.json(generateToken(req.query.name))
+  res.json({token:generateToken(req.query.name),message:'available only in 60s'})
 })
 
 app.listen(3001, () =>
