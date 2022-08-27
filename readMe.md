@@ -1,4 +1,6 @@
 # How to Run
+install deps
+```npm i```
 run this command
 ```node index.js```
 Open **Insomia** or **Postman** then go to
