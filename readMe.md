@@ -12,7 +12,7 @@ __Get Request__```localhost:3001/api/generateToken``` <br />
 ```
 name -- string
 ```
-Open **Insomia** or **Postman** then go to <br />
+Open **Insomia** or **Postman** add the token as bearer toekn then go to <br />
 ```localhost:3001/api/xyz``` <br />
 #### query params available
 ```
