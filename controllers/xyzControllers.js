@@ -5,7 +5,7 @@ const xyzControllers = (req,res) => {
     const reqSize = req.query.size ?? 3;
     const reqDirection = req.query.direction ?? 'vertical';
     const letterFactory = new Letters(reqSize);
-   
+    
     if(!reqLetters.match(/^[XYZxyz]/g) || reqLetters.match(/[a-wA-W0-9!@#\$%\^\&*\)\(+=._-]/g)) {
         res.send('Oops xyz only')
         return '';
