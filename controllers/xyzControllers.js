@@ -10,7 +10,8 @@ const xyzControllers = (req,res) => {
         res.send('Oops xyz only')
         return '';
     }
-    if(reqSize % 2 == 0  || reqSize < 1) {
+
+    if(reqSize % 2 == 0  || reqSize == 1 || reqSize.match(/[^0-9]/g)) {
         res.send('Oops uhm odd number only and size should be greater than one.')
         return '';
     }
